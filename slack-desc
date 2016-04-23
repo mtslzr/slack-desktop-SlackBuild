@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+             |-----handy-ruler------------------------------------------------------|
+slack-desktop: slack-desktop (an internet messaging client)
+slack-desktop:
+slack-desktop: Slack is a cloud-based team collaboration tool co-founded by Stewart
+slack-desktop: Butterfield, Eric Costello, Cal Henderson, and Serguei Mourachov.
+slack-desktop:
+slack-desktop: Slack began as an internal tool by their company, Tiny Speck, in the
+slack-desktop: development of Glitch, a now-defunct online game.
+slack-desktop:
+slack-desktop: Description from https://en.wikipedia.org/wiki/Slack_%28software%29
+slack-desktop: Project URL: https://slack.com/
+slack-desktop: 

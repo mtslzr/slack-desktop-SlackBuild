@@ -1,0 +1,38 @@
+#!/bin/sh
+
+# Slackware build script for slack
+
+PRGNAM=slack-desktop
+VERSION=${VERSION:-2.0.3}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_SBo}
+
+if [ -z "$ARCH" ]; then
+  case "$( uname -m )" in
+    i?86) ARCH=i386 ;;
+    x86_64) ARCH=amd64 ;;
+    *) ARCH=$( uname -m ) ;;
+  esac
+fi
+
+CWD=$(pwd)
+SBO=${SBO:-/tmp/SBo}
+TMP=${TMP:-$SBO/$PRGNAM}
+PKG=${PKG:-$SBO/package-$PRGNAM}
+OUTPUT=${OUTPUT:-/tmp}
+
+set -e
+
+rm -rf $PKG $TMP
+mkdir -p $SBO $PKG $TMP
+cd $TMP
+ar -x $CWD/$PRGNAM-$VERSION-$ARCH.deb
+cd $PKG
+tar -xf $TMP/data.tar.xz
+
+mkdir -p $PKG/install
+cat $CWD/slack-desc > $PKG/install/slack-desc
+cat $CWD/doinst.sh > $PKG/install/doinst.sh
+
+cd $PKG
+/sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}
