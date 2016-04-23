@@ -11,4 +11,5 @@ $ su -
 # installpkg /tmp/slack-desktop*tgz
 ```
 
-From Wikipedia: "Slack is a cloud-based team collaboration tool co-founded by Stewart Butterfield, Eric Costello, Cal Henderson, and Serguei Mourachov. Slack began as an internal tool used by their company, Tiny Speck, in the development of Glitch, a now defunct online game."
+From Wikipedia:
+> Slack is a cloud-based team collaboration tool co-founded by Stewart Butterfield, Eric Costello, Cal Henderson, and Serguei Mourachov. Slack began as an internal tool used by their company, Tiny Speck, in the development of Glitch, a now defunct online game.
