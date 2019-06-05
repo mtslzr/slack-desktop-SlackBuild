@@ -1,7 +1,7 @@
 # slack-desktop-SlackBuild
 SlackBuild script for installing Slack messaging client under Slackware
 
-Currently for Slack 3.3.3 on Slackware 14.2 (x64 only).
+Currently for Slack 3.4.2 on Slackware 14.2 (x64 only).
 
 ```
 $ git clone https://github.com/mtslzr/slack-desktop-SlackBuild
